@@ -221,7 +221,7 @@ body {
 
 /* Banner */
 .banner-wrapper {
-    background: #000 url(img/banner/bg.ipg) center no-repeat;
+    background: url(img/banner/bg.ipg) center no-repeat;
 }
 
 .banner {
