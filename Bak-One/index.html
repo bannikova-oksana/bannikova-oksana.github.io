@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Back-One</title>
+</head>
+<body>
+
+    <!--Sprite-->
+    <svg style="display: none;">
+        <symbol id="dribble" viewBox="0 0 438.533 438.533">
+            <g>
+                <path d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+                    c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+                    c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+                    s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062
+                    C438.533,179.485,428.732,142.795,409.133,109.203z M219.27,31.977c47.201,0,88.41,15.607,123.621,46.82l-3.569,4.993
+                    c-1.427,2.002-4.996,5.852-10.704,11.565c-5.709,5.708-11.943,11.136-18.699,16.274c-6.762,5.14-15.94,10.992-27.555,17.559
+                    c-11.611,6.567-23.982,12.328-37.117,17.276c-21.887-40.355-45.296-76.709-70.231-109.064
+                    C190.055,33.784,204.805,31.977,219.27,31.977z M72.524,103.06c18.271-23.026,40.537-40.73,66.806-53.1
+                    c23.601,31.405,46.82,67.381,69.662,107.921c-57.862,15.227-115.532,22.841-173.014,22.838
+                    C42.072,151.98,54.253,126.091,72.524,103.06z M44.54,286.794c-8.376-21.412-12.563-43.923-12.563-67.527
+                    c0-2.666,0.098-4.665,0.286-5.996c68.905,0,132.955-8.848,192.149-26.553c6.092,11.8,11.136,22.364,15.133,31.693
+                    c-0.771,0.38-1.999,0.806-3.713,1.283c-1.719,0.476-2.953,0.806-3.721,0.999l-10.561,3.711
+                    c-7.236,2.666-16.708,7.235-28.409,13.703c-11.704,6.478-24.123,14.182-37.257,23.13c-13.134,8.949-26.696,20.797-40.684,35.553
+                    c-13.99,14.75-25.743,30.591-35.26,47.53C64.713,327.381,52.914,308.2,44.54,286.794z M219.27,406.56
+                    c-44.54,0-84.32-14.277-119.343-42.825l4.283,3.142c6.661-14.66,16.462-28.746,29.408-42.257
+                    c12.944-13.511,25.41-24.413,37.401-32.695c11.991-8.274,25.028-16.077,39.115-23.414c14.084-7.323,23.691-11.991,28.835-13.983
+                    c5.14-1.998,9.233-3.572,12.278-4.716l0.568-0.287h0.575c18.647,48.916,31.977,96.313,39.968,142.184
+                    C268.756,401.611,244.397,406.557,219.27,406.56z M376.876,320.479c-14.086,21.796-31.696,39.834-52.817,54.104
+                    c-7.81-43.776-19.985-88.415-36.549-133.902c37.877-5.907,76.8-3.142,116.771,8.274
+                    C400.092,274.841,390.955,298.687,376.876,320.479z M403.706,216.698c-1.903-0.378-4.285-0.81-7.139-1.283
+                    c-2.854-0.473-6.331-1.047-10.424-1.713c-4.087-0.666-8.662-1.283-13.702-1.855c-5.045-0.571-10.421-1.093-16.136-1.569
+                    c-5.708-0.478-11.8-0.855-18.268-1.143c-6.479-0.284-13.042-0.428-19.705-0.428c-6.656,0-13.657,0.193-20.981,0.571
+                    c-7.326,0.375-14.414,1.049-21.265,1.999c-0.575-0.953-1.287-2.524-2.143-4.714c-0.855-2.187-1.479-3.855-1.848-4.997
+                    c-3.621-7.994-7.81-17.036-12.573-27.121c13.134-5.333,25.652-11.469,37.555-18.418c11.892-6.949,21.402-13.131,28.544-18.555
+                    c7.139-5.43,13.895-11.188,20.27-17.277c6.379-6.09,10.513-10.323,12.423-12.703c1.906-2.384,3.713-4.714,5.424-6.995l0.287-0.288
+                    c27.788,33.88,41.974,72.897,42.538,117.059L403.706,216.698z"/>
+            </g>
+        </symbol>
+
+        <symbol id="facebook" viewBox="0 0 96.124 96.123">
+            <g>
+                <path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+                    c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+                    c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+                    c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
+            </g>
+        </symbol>
+
+        <symbol id="google" viewBox="0 0 604.35 604.35">
+            <g>
+                <path d="M516.375,255v-76.5h-51V255h-76.5v51h76.5v76.5h51V306h76.5v-51H516.375z M320.025,341.7l-28.051-20.4
+                    c-10.2-7.649-20.399-17.85-20.399-35.7s12.75-33.15,25.5-40.8c33.15-25.5,66.3-53.55,66.3-109.65c0-53.55-33.15-84.15-51-99.45
+                    h43.35l30.6-35.7h-158.1c-112.2,0-168.3,71.4-168.3,147.9c0,58.65,45.9,122.4,127.5,122.4h20.4c-2.55,7.65-10.2,20.4-10.2,33.15
+                    c0,25.5,10.2,35.7,22.95,51c-35.7,2.55-102,10.2-150.45,40.8c-45.9,28.05-58.65,66.3-58.65,94.35
+                    c0,58.65,53.55,114.75,168.3,114.75c137.7,0,204.001-76.5,204.001-150.449C383.775,400.35,355.725,372.3,320.025,341.7z
+                     M126.225,109.65c0-56.1,33.15-81.6,68.85-81.6c66.3,0,102,89.25,102,140.25c0,66.3-53.55,79.05-73.95,79.05
+                    C159.375,247.35,126.225,168.3,126.225,109.65z M218.024,568.65c-84.15,0-137.7-38.25-137.7-94.351c0-56.1,51-73.95,66.3-81.6
+                    c33.15-10.2,76.5-12.75,84.15-12.75s12.75,0,17.85,0c61.2,43.35,86.7,61.2,86.7,102C335.324,530.4,286.875,568.65,218.024,568.65z
+                    "/>
+            </g>
+        </symbol>
+
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <g>
+                <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                    C480.224,136.96,497.728,118.496,512,97.248z"/>
+            </g>
+        </symbol>
+    </svg>
+
+
+    <header class="header">
+            <div class="header__logo">
+                <img class="header__img" src="img/logo/b-logo.png" alt="" >
+                <div class="header__desk">
+                    <div class="header__desk-title">BAK-ONE</div>
+                    <div class="header__desk-text">One Page Flat Template</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="" class="nav__link">HOME</a>
+                <a href="" class="nav__link">PORTFOLIO</a>
+                <a href="" class="nav__link">ABOUT</a>
+                <a href="" class="nav__link">CONTACT</a>
+            </nav>
+    </header>
+
+    <div class="intro-wrapper">
+        <div class="intro__inner">
+            <div class="intro__title">We Build <span>Brand</span></div>
+            <div class="intro__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+            <a href="" class="green__button">LEARN MORE</a>
+            <a href="" class="arrowdown">
+                <img src="img/intro/arrow_down.png" alt="">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="portfolio">
+        <div class="portfolio__title">Portfolio</div>
+        <div class="portfolio__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+        <div class="portfolio__nav">
+            <a href="" class="green__button">All</a>
+            <a href="" class="green__button">WEB DESIGN</a>
+            <a href="" class="green__button">GRAPHIC DESIGN</a>
+            <a href="" class="green__button">FLAT DESIGN</a>
+        </div>
+        <div class="portfolio-katalog">
+
+            <div class="portfolio-katalog__item">
+                <img src="img/portfolio/img-1.png" alt="" class="portfolio-katalog__img">        
+                <a class="portfolio-katalog__cont">
+                    <img src="img/portfolio/icon.png" alt="" class="portfolio-katalog__icon">
+                    <div class="portfolio-katalog__title">Example Title</div>
+                    <div class="portfolio-katalog__text">Web Design</div>
+                </a>
+            </div>
+
+            <div class="portfolio-katalog__item">
+                    <img src="img/portfolio/img-2.png" alt="" class="portfolio-katalog__img">
+                    <a class="portfolio-katalog__cont">
+                        <img src="img/portfolio/icon.png" alt="" class="portfolio-katalog__icon">
+                        <div class="portfolio-katalog__title">Example Title</div>
+                        <div class="portfolio-katalog__text">Web Design</div>
+                    </a>
+            </div>
+    
+            <div class="portfolio-katalog__item">
+                    <img src="img/portfolio/img-3.png" alt="" class="portfolio-katalog__img">
+                    <a class="portfolio-katalog__cont">
+                        <img src="img/portfolio/icon.png" alt="" class="portfolio-katalog__icon">
+                        <div class="portfolio-katalog__title">Example Title</div>
+                        <div class="portfolio-katalog__text">Web Design</div>
+                    </a>
+             </div>
+    
+             <div class="portfolio-katalog__item">
+                    <img src="img/portfolio/img-4.png" alt="" class="portfolio-katalog__img">
+                    <a class="portfolio-katalog__cont">
+                        <img src="img/portfolio/icon.png" alt="" class="portfolio-katalog__icon">
+                        <div class="portfolio-katalog__title">Example Title</div>
+                        <div class="portfolio-katalog__text">Web Design</div>
+                    </a>
+             </div>
+
+             <div class="portfolio-katalog__item">
+                    <img src="img/portfolio/img-5.png" alt="" class="portfolio-katalog__img">
+                    <a class="portfolio-katalog__cont">
+                        <img src="img/portfolio/icon.png" alt="" class="portfolio-katalog__icon">
+                        <div class="portfolio-katalog__title">Example Title</div>
+                        <div class="portfolio-katalog__text">Web Design</div>
+                    </a>
+             </div>
+
+             <div class="portfolio-katalog__item">
+                    <img src="img/portfolio/img-6.png" alt="" class="portfolio-katalog__img">
+                    <a class="portfolio-katalog__cont">
+                        <img src="img/portfolio/icon.png" alt="" class="portfolio-katalog__icon">
+                        <div class="portfolio-katalog__title">Example Title</div>
+                        <div class="portfolio-katalog__text">Web Design</div>
+                    </a>
+             </div>
+
+             <div class="portfolio-katalog__item">
+                    <img src="img/portfolio/img-7.png" alt="" class="portfolio-katalog__img">
+                    <a class="portfolio-katalog__cont">
+                        <img src="img/portfolio/icon.png" alt="" class="portfolio-katalog__icon">
+                        <div class="portfolio-katalog__title">Example Title</div>
+                        <div class="portfolio-katalog__text">Web Design</div>
+                    </a>
+             </div>
+
+             <div class="portfolio-katalog__item">
+                    <img src="img/portfolio/img-8.png" alt="" class="portfolio-katalog__img">
+                    <a class="portfolio-katalog__cont">
+                        <img src="img/portfolio/icon.png" alt="" class="portfolio-katalog__icon">
+                        <div class="portfolio-katalog__title">Example Title</div>
+                        <div class="portfolio-katalog__text">Web Design</div>
+                    </a>
+             </div>
+
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="about__title">About Us</div>
+        <div class="about__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+
+        <div class="about__inner">
+
+            <div class="about__item">
+                <img src="img/about/ava-1.png" alt="" class="about__item-photo">
+                <div class="about__item-name">Melannie Doe</div>
+                <div class="about__item-position">Project Manager</div>
+                <div class="about__item-text">Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                    ut aliquip ex ea commodo consequat.</div>
+                <div class="about__social">
+                    <a href="" class="social__link">
+                        <svg>
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="social__link">
+                        <svg>
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="social__link">
+                        <svg>
+                            <use xlink:href="#google"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="social__link">
+                        <svg>
+                            <use xlink:href="#dribble"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="about__item">
+                    <img src="img/about/ava-3.png" alt="" class="about__item-photo">
+                    <div class="about__item-name">Jhonnie Doe</div>
+                    <div class="about__item-position">Graphic Designer</div>
+                    <div class="about__item-text">Ut wisi enim ad minim veniam,
+                        quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                        ut aliquip ex ea commodo consequat.</div>
+                    <div class="about__social">
+                        <a href="" class="social__link">
+                            <svg>
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="social__link">
+                            <svg>
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="social__link">
+                            <svg>
+                                <use xlink:href="#google"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="social__link">
+                            <svg>
+                                <use xlink:href="#dribble"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about__item">
+                        <img src="img/about/ava-2.png" alt="" class="about__item-photo">
+                        <div class="about__item-name">Daniel Doe</div>
+                        <div class="about__item-position">Web Designer</div>
+                        <div class="about__item-text">Ut wisi enim ad minim veniam,
+                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                            ut aliquip ex ea commodo consequat.</div>
+                        <div class="about__social">
+                            <a href="" class="social__link">
+                                <svg>
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="social__link">
+                                <svg>
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="social__link">
+                                <svg>
+                                    <use xlink:href="#google"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="social__link">
+                                <svg>
+                                    <use xlink:href="#dribble"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact__title">Contact Us</div>
+        <div class="contact__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+        <div class="contact__inner">
+            <form action="" class="contact__form" id="contact__form">
+                <input class="name" type="text" form="contact__form" placeholder="Your name"></input>
+                <input class="email" type="text" form="contact__form" placeholder="Your email"></input>
+                <textarea class="message" type="text" form="contact__form" placeholder="Your message"></textarea>
+                <a href="" class="green__button">SUBMIT</a>
+            </form>
+            <div class="contact__info">
+                <div class="contact__info-title">INFORMATION</div>
+                <div class="contact__info-text">Bak-One Company
+                        12345 Hollywood Bvld Street
+                         Los Angeles, California</div>
+                <div class="contact__info-text">+444 (Phone) 123456</div>
+                <div class="contact__info-text">+444 (Phone) 123456</div>
+                <div class="contact__info-text">info@bak-onecompany.com</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__copyright">© Copyright 2013 Bak-One  |  One Page Flat Template</div>
+        <a href="" class="green__button green__button--arrow">
+            <img src="img/footer/arrow.png" alt="">
+        </a>
+    </footer>
+
+
+</body>
+</html>
+
+
+			

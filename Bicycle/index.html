@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap" rel="stylesheet">
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#6e9393">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="описание страницы">
+        
+        <title>Bicycle</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <!-- Sprite -->
+        <svg style="display: none;">
+            <symbol id="twitter" viewBox="0 0 512 512">
+                <g>
+                    <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                    C480.224,136.96,497.728,118.496,512,97.248z"/></g>
+            </symbol>
+
+            <symbol id="twitter2" viewBox="0 0 291.319 291.319">
+                 <g>
+                            <path style="fill:#26A6D1;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+                                S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+                            <path style="fill:#FFFFFF;" d="M236.724,98.129c-6.363,2.749-13.21,4.597-20.392,5.435c7.338-4.27,12.964-11.016,15.613-19.072
+                                c-6.864,3.96-14.457,6.828-22.55,8.366c-6.473-6.691-15.695-10.87-25.909-10.87c-19.591,0-35.486,15.413-35.486,34.439
+                                c0,2.704,0.31,5.335,0.919,7.857c-29.496-1.438-55.66-15.158-73.157-35.996c-3.059,5.089-4.807,10.997-4.807,17.315
+                                c0,11.944,6.263,22.504,15.786,28.668c-5.826-0.182-11.289-1.721-16.086-4.315v0.437c0,16.696,12.235,30.616,28.476,33.784
+                                c-2.977,0.783-6.109,1.211-9.35,1.211c-2.285,0-4.506-0.209-6.673-0.619c4.515,13.692,17.625,23.651,33.165,23.925
+                                c-12.153,9.249-27.457,14.748-44.089,14.748c-2.868,0-5.69-0.164-8.476-0.482c15.722,9.777,34.367,15.485,54.422,15.485
+                                c65.292,0,100.997-52.51,100.997-98.029l-0.1-4.461C225.945,111.111,231.963,105.048,236.724,98.129z"/>
+                    </g>
+            </symbol>
+
+            <symbol id="facebook"  viewBox="0 0 112.196 112.196">
+                <g>
+                            <circle style="fill:#3B5998;" cx="56.098" cy="56.098" r="56.098"/>
+                            <path style="fill:#FFFFFF;" d="M70.201,58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34
+                                c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.668-3.217,3.513v7.585h11.334L70.201,58.294z"/>
+                    </g>
+            </symbol>
+
+            <symbol id="pinterest" viewBox="0 0 112.198 112.198">
+                 <g>
+                    <circle style="fill:#CB2027;" cx="56.099" cy="56.1" r="56.098"/>
+                    <g>
+                        <path style="fill:#F1F2F2;" d="M60.627,75.122c-4.241-0.328-6.023-2.431-9.349-4.45c-1.828,9.591-4.062,18.785-10.679,23.588
+                                    c-2.045-14.496,2.998-25.384,5.34-36.941c-3.992-6.72,0.48-20.246,8.9-16.913c10.363,4.098-8.972,24.987,4.008,27.596
+                                    c13.551,2.724,19.083-23.513,10.679-32.047c-12.142-12.321-35.343-0.28-32.49,17.358c0.695,4.312,5.151,5.621,1.78,11.571
+                                    c-7.771-1.721-10.089-7.85-9.791-16.021c0.481-13.375,12.018-22.74,23.59-24.036c14.635-1.638,28.371,5.374,30.267,19.14
+                                    C85.015,59.504,76.275,76.33,60.627,75.122L60.627,75.122z"/>
+                    </g>
+                    </g>
+            </symbol>
+        </svg>
+
+        <header class="header" id="header">
+                <div class="header__inner">
+                    <nav class="nav nav--left" id="nav">
+                        <a class="nav__link" href="" data-scroll="#about">about us</a>
+                        <span>.</span>
+                        <a class="nav__link" href="" data-scroll="#work">work</a>
+                    </nav>  
+                    <img class="nav__logo" src="img/logo.png" alt="">
+                    <nav class="nav" id="nav">
+                        <a class="nav__link" href="" data-scroll="#shop">shop </a>
+                        <span>.</span>
+                        <a class="nav__link nav__link--last" href=""data-scroll="#contact">contact</a>
+                    </nav>
+
+                    <button class="burger" type="button" id="navToggle">
+                        <span class="burger__item">Menu</span>
+                    </button>
+                </div>
+        </header>
+
+        <div class="top" id="top">
+            <div class="top__content">content</div>
+        </div>
+
+
+        <div class="about" id="about">
+            <div class="about__inner">
+                <img class="about__icon" src="img/about_icon.png" alt="">
+                <h2 class="about__title">A NEW GENERATION OF VINTAGE BIKE</h2>
+                <div class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="works" id="work">
+           
+                <div class="works__col2">
+                    <img class="works_bike" src="img/works/works_bike1.png" alt="">
+                    <div class="works__cont">
+                    <img class="works__logo works__logo--1" src="img/works/works_logo1.png" alt="">
+                    </div>
+                </div>
+                <div class="works__col ">
+                    <div class="works__about">
+                        <img class="works__about-bg" src="img/works/Bg__about.png" alt="">
+                        <div class="works__about-cont">
+                            <img class="works__about-icon" src="img/works/works__icon1.png" alt="">
+                            <div class="works__about-title">vintage Oliva</div>
+                            <div class="works__about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</div>
+                        </div>
+                    </div>
+                    <img class="works__detail" src="img/works/works__detail1.png" alt="">
+                </div>
+           
+                
+        
+                    <div class="works__col works__col--border">
+                        <div class="works__about">
+                            <img class="works__about-bg" src="img/works/Bg__about.png" alt="">
+                            <div class="works__about-cont">
+                                <img class="works__about-icon" src="img/works/works_icon2.png" alt="">
+                                <div class="works__about-title">La Boriosa</div>
+                                <div class="works__about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</div>
+                            </div>
+                        </div>
+                            <img class="works__detail" src="img/works/works-detail2.png" alt="">
+                        </div>
+                    <div class="works__col2">
+                        <img class="works_bike" src="img/works/works_bike2.png" alt="">
+                        <div class="works__cont">
+                             <img class="works__logo works__logo--2" src="img/works/works_logo2.png" alt="">
+                        </div>
+                    </div>
+            
+
+           
+                <div class="works__col works__col--logo">
+                    <img class="works_bike" src="img/works/works_bike3.png" alt="">
+                    <div class="works__cont">
+                        <img class="works__logo works__logo--3" src="img/works/works_logo3.png" alt="">
+                    </div>
+                </div>
+                <div class="works__col works__col--border">
+                    <div class="works__about">
+                        <img class="works__about-bg" src="img/works/Bg__about.png" alt="">
+                        <div class="works__about-cont">
+                            <img class="works__about-icon  works__about-icon--3" src="img/works/works_icon3.png" alt="">
+                            <div class="works__about-title">retrò Bike - M. Hulot</div>
+                            <div class="works__about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</div>
+                        </div>
+                    </div>
+                        <img class="works__detail" src="img/works/works_detail3.png" alt="">
+                </div>
+                <div class="works__col works__col--last">
+                    <img class="works_bike" src="img/works/works_bike3.png" alt="">
+                </div>
+
+        </div>
+        
+
+
+        <div class="reviews">
+                <div class="reviews__item">
+                    <div class="reviews__inner">
+                        <a class="reviews__icon"  href="#" target="_blank">
+                            <svg class="reviews__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <div class="reviews__title">AOD New York  @aod 
+                            <span>/  35 min</span>
+                        </div>
+                        <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="shop"  id="shop">
+
+            <div class="shop__line">
+                <div class="shop__item shop__item--line">
+                    <img class="shop__img" src="img/shop/1.png" alt="">
+                    <div class="shop__info">
+                        <img class="shop__icon" src="img/shop/icon.png" alt="">
+                        <a class="shop__link">Shop now</a>
+                    </div> 
+                </div>
+                <div class="shop__item shop__item--line">
+                    <img class="shop__img" src="img/shop/2.png" alt="">
+                    <div class="shop__info">
+                        <img class="shop__icon" src="img/shop/icon.png" alt="">
+                        <a class="shop__link">Shop now</a>
+                    </div> 
+                </div>
+                <div class="shop__item shop__item--line_long">
+                    <img class="shop__img" src="img/shop/3.png" alt="">
+                    <div class="shop__info">
+                        <img class="shop__icon" src="img/shop/icon.png" alt="">
+                        <a class="shop__link">Shop now</a>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="shop__col">
+                <div class="shop__item">
+                    <img class="shop__img" src="img/shop/4.png" alt="">
+                    <div class="shop__info">
+                        <img class="shop__icon" src="img/shop/icon.png" alt="">
+                        <a class="shop__link">Shop now</a>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="shop__col">
+                <div class="shop__item">
+                    <img class="shop__img" src="img/shop/5.png" alt="">
+                    <div class="shop__info">
+                        <img class="shop__icon" src="img/shop/icon.png" alt="">
+                        <a class="shop__link">Shop now</a>
+                    </div> 
+                 </div>
+            </div>
+
+            <div class="shop__line">
+                <div class="shop__item shop__item--line_long">
+                    <img class="shop__img" src="img/shop/6.png" alt="">
+                    <div class="shop__info">
+                        <img class="shop__icon" src="img/shop/icon.png" alt="">
+                        <a class="shop__link">Shop now</a>
+                     </div> 
+                 </div>
+                <div class="shop__item shop__item--line">
+                    <img class="shop__img" src="img/shop/7.png" alt="">
+                    <div class="shop__info">
+                        <img class="shop__icon" src="img/shop/icon.png" alt="">
+                        <a class="shop__link">Shop now</a>
+                    </div> 
+                </div>
+                <div class="shop__item shop__item--line">
+                    <img class="shop__img" src="img/shop/8.png" alt="">
+                    <div class="shop__info">
+                        <img class="shop__icon" src="img/shop/icon.png" alt="">
+                        <a class="shop__link">Shop now</a>
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="discover" id="contact">
+            <a class="discover__button">DISCOVER THE SHOP</a>
+        </div>
+
+        <div class="mailing">
+            <img class="mailing__logo" src="img/Logo.png" alt="">
+            <div class="mailing__text">Stay on the saddle!</div>
+            <form class="mailing__form" action="/" method="POST">
+                <input class="mailing__input" type="email" name="name" placeholder="enter your email... ">
+                <button class="mailing__btn" type="submit">GO</button>
+            </form>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__adress">
+                    <span>AOD New York</span> 
+                    <div>2250 Lexington Avenue</div> 
+                    <div>New York, NY 10035  - info@domain.com</div>
+                </div>
+
+                <div class="footer__social">
+                    <a class="footer__link"  href="#" target="_blank">
+                        <svg class="footer__icon">
+                            <use xlink:href="#twitter2"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__link"  href="#" target="_blank">
+                        <svg class="footer__icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__link"  href="#" target="_blank">
+                        <svg class="footer__icon">
+                            <use xlink:href="#pinterest"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer__sign">
+                    <span>Handcrafted by</span> 
+                    <img src="img/Y_E_B_O_Logo.png" alt="">
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="app.js"></script>
+
+    </body>
+</html>
